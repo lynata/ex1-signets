@@ -1,9 +1,15 @@
 import './Page.scss';
+import Entete from './Entete';
+import ListeSignets from './ListeSignets';
 
-export default function Page() {
+
+export default function Page(props) {
   return (
     <div className="Page">
-        Gabarit de base d'une Application React
+        <Entete/>
+        <section className="ListeSignets">
+          <ListeSignets/>
+        </section>
     </div>
   );
 }
